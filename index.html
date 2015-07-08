@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>I尚家</title>
+    <link rel="stylesheet" href="css/base.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <style type="text/css">
+        .slidesjs-navigation,.slidesjs-pagination{display: none}
+    </style>
+</head>
+<body>
+<!--header start -->
+    <div class="header">
+        <div class="content">
+            <a href="#" class="logo"><img src="images/common/logo.jpg"></a>
+            <a href="#" class="addressDrop">上海</a>
+            <ul class="isj_menu">
+                <li>
+                    <a class="isj_item" href="#">找房</a>
+                </li>
+                <li>
+                    <a class="isj_item" href="#">公寓服务</a>
+                </li>
+                <li>
+                    <a class="isj_item" href="#">社区活动</a>
+                </li>
+                <li>
+                    <a class="isj_item" href="#">租赁流程</a>
+                </li>
+                <li>
+                    <a class="isj_item" href="#">关于我们</a>
+                </li>
+                <li>
+                    <a  class="isj_item join" href="#">加入我们</a>
+                </li>
+            </ul>
+            <div class="loginSign">
+                <img src="images/common/user.jpg">
+                <a href="#">登录</a>
+                <span class="lsfl">|</span>
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+<!--header end -->
+    <div class="clear"></div>
+<!--big img adv start-->
+    <div class="clearfix slideBox" >
+        <div id="slides">
+            <img src="images/index/img.jpg">
+            <img src="images/index/img.jpg">
+            <img src="images/index/img.jpg">
+            <img src="images/index/img.jpg">
+        </div>
+        <div class="searchBox">
+            <div class="index_input_01">
+                <span class="input_before">在</span>
+                <div class="inputbox">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="index_input_02">
+                <span class="input_before">附近</span>
+                <div class="inputbox">
+                    <input type="text">
+                </div>
+            </div>
+            <a class="searchBtn" href="#">搜&nbsp;索</a>
+        </div>
+    </div>
+<!--big img adv end-->
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+<script>
+    $(function(){
+        $("#slides").slidesjs({
+            width: 1280,
+            height: 460,
+            play: {
+                active: false,
+                // [boolean] Generate the play and stop buttons.
+                // You cannot use your own buttons. Sorry.
+                effect: "slide",
+                // [string] Can be either "slide" or "fade".
+                interval: 5000,
+                // [number] Time spent on each slide in milliseconds.
+                auto: true,
+                // [boolean] Start playing the slideshow on load.
+                swap: true,
+                // [boolean] show/hide stop and play buttons
+                pauseOnHover: false,
+                // [boolean] pause a playing slideshow on hover
+                restartDelay: 2500
+                // [number] restart delay on inactive slideshow
+            }
+        });
+    });
+</script>
+</body>
+</html>
